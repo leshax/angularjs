@@ -1,0 +1,11 @@
+<form ng-submit="$ctrl.submit()"> Country:  <div class="my-app-auto-complete-container">
+    <my-app-autocomplete select="$ctrl.select(message)"></my-app-autocomplete>
+  </div>
+  Selected: <span class="my-app-required" ng-if="!$ctrl.countries.length">Required</span>
+  <ul>
+    <li ng-repeat="c in $ctrl.countries">{{c.name}}<input type="button" value="x" ng-click="$ctrl.remove(c.isoCode)"/></li>
+  </ul>
+  <input type="submit" text="submit"/>
+  <div class="my-app-submit-info">{{$ctrl.submitLogs}}</div>
+
+</form>

@@ -1,0 +1,8 @@
+<div class="my-app-autocomplete-container">
+  <input type="text" ng-change="onEdit()" ng-model="search" ng-blur="onBlur()"></input>
+  <div class="my-app-autocomplete-results" ng-if="results.length">
+    <ul>
+      <li ng-repeat="item in results" ng-click="select({message:item})">{{item.name}}</li>
+    </ul>
+  </div>
+</div>

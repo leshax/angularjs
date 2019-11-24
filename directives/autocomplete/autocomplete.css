@@ -1,0 +1,17 @@
+
+.my-app-autocomplete-results {
+  position: absolute;
+  width: 100%;
+  border: 1px solid #00000024;
+  background-color: white;
+  font-size: small;
+  color: grey;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.my-app-autocomplete-results li {
+  list-style-type: none;
+  margin-left: -25px;
+}
+.my-app-autocomplete-container {
+  position: relative;
+}
